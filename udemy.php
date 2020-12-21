@@ -20,9 +20,9 @@
 <pre>
 <!-- ここにプログラムを記述します -->
 <?php
-for ($i = 1; $i <= 365; $i++) {
-    echo $i . PHP_EOL;
-}
+for ($i = 1; $i <= 365; $i++) :
+    echo date('n/j(D)', strtotime('+' . $i . 'day')) . PHP_EOL;
+endfor;
 ?>
 </pre>
 </main>
