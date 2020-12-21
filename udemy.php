@@ -20,7 +20,9 @@
 <pre>
 <!-- ここにプログラムを記述します -->
 <?php
-echo date('G時i分s秒') . PHP_EOL;
+for ($i = 1; $i <= 365; $i++) {
+    echo $i . PHP_EOL;
+}
 ?>
 </pre>
 </main>
