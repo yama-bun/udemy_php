@@ -19,7 +19,7 @@
 <h2>Practice</h2>
 <pre>
 <!-- ここにプログラムを記述します -->
-
+    お名前：<?php echo htmlspecialchars($_POST['my_name'], ENT_QUOTES). PHP_EOL; ?>
 </pre>
 </main>
 </body>

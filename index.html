@@ -17,10 +17,16 @@
 
 <main>
 <h2>Practice</h2>
-<pre>
-<!-- ここにプログラムを記述します -->
-
-</pre>
+<form action="submit.php" method="post">
+    <p>性別：
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">男性</label>
+        /
+        <input type="radio" name="gender" id="female" value="female">女性
+        <label for="female"></label>
+    </p>
+    <input type="submit" value="送信">
+</form>
 </main>
 </body>
 </html>
