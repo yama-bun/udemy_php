@@ -19,7 +19,16 @@
 <h2>Practice</h2>
 <pre>
 <!-- ここにプログラムを記述します -->
-    お名前：<?php echo htmlspecialchars($_POST['my_name'], ENT_QUOTES). PHP_EOL; ?>
+<?php
+$zip = '１２３-２３４５';
+
+$zip = mb_convert_kana($zip, 'a', 'UTF-8');
+if (preg_match("/\A\d{3}[-]\d{4}\z/", $zip)) {
+    echo '郵便番号：〒' . $zip . PHP_EOL;
+} else {
+    echo '※郵便番号を 123-4567の形式で入力してください。' . PHP_EOL;
+}
+?>
 </pre>
 </main>
 </body>

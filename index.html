@@ -18,12 +18,11 @@
 <main>
 <h2>Practice</h2>
 <form action="submit.php" method="post">
-    <p>性別：
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="male">男性</label>
-        /
-        <input type="radio" name="gender" id="female" value="female">女性
-        <label for="female"></label>
+    <p>ご予約希望日</p>
+    <p>
+        <input type="checkbox" name="reserve[]" value="1/1">1/1<br>
+        <input type="checkbox" name="reserve[]" value="1/2">1/2<br>
+        <input type="checkbox" name="reserve[]" value="1/3">1/3<br>
     </p>
     <input type="submit" value="送信">
 </form>
